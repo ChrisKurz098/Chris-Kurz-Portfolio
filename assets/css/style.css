@@ -25,31 +25,41 @@ header h1 {
     margin-left:150px;
 }
 
-header img{
-    margin: auto;
-    border-radius: 50%;
-    order: 3;
-}
+
 
 header nav {
     order:1;
-    font-size: 30px;
+    border-right: 5px solid darkblue;
+    text-align: center;
+    font-size: 26px;
     position: fixed;
+    width: 153px;
     top: 0;
     left: 0;
-    flex-direction: column;
-    justify-content: space-around;
     background-color: burlywood;
     padding-bottom: 100vw;
     z-index: 9999;
 }
 
-header ul li{
-    flex: 1 25%;
-}
-
-header nav ul li a{
+header nav a{
+    display: block; /*set from flex child to block so margins can be set for spacing*/
+    color: rgb(48, 48, 48);
+    margin-top: 70px;
+    margin-right: 10px;
+    margin-left: 10px;
     text-decoration: none;
+    background-color: seashell;
+    border-radius: 20px;
+    border-top: 5px solid darkblue;
+    border-bottom: 5px solid darkblue;
+
+    
+}
+header nav img{
+    margin-top: 65px;
+    border-radius: 50%;
+    max-height: 145px;
+    max-height: 145px;
 }
 
 /* END HEADER/NAV */
