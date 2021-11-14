@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    margin-left:153px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: brown;
+}
+
+header h1 {
+    margin-top:81px;
+    order:2;
+    font-size: 100px;
+    margin-left:150px;
+}
+
+header img{
+    margin: auto;
+    border-radius: 50%;
+    order: 3;
+}
+
+header nav {
+    order:1;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: burlywood;
+    padding-bottom: 100vw;
+    z-index: 9999;
+}
+
+header ul li{
+    flex: 1 25%;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+/* END HEADER/NAV */
+
+/*BEGIN ABOUT ME SECTION*/
+#about{
+    text-align: center;
+    margin-left:153px;
+}
+
+/*BEGIN WORKS SECTION*/
+#works {
+    text-align: center;
+    margin-left:153px;
+}
+/*BEGIN FOOTER SECTION*/
+footer {
+    text-align: center;
+    margin-left:153px;
+}
