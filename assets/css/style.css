@@ -18,7 +18,10 @@ body {
     font-family: 'Lucida Sans', Arial, sans-serif;
 }
 
-
+#profile-pic-title{ /*this element is to only be seen on the smallest screen size*/
+    visibility: hidden;
+    height:0px;
+}
 header {
     overflow: hidden;
     display: flex;
@@ -71,7 +74,7 @@ header nav {
 }
 
 header nav a{
-    display: block; /*set from flex child to block so margins can be set for spacing*/
+    display: inline-block; /*set from flex child to block so margins can be set for spacing*/
     color: rgb(48, 48, 48);
     margin-top: 8vh;
     text-decoration: none;
@@ -133,6 +136,7 @@ header nav img{
     height: 350px;
     border-top: 3px solid var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
+    background-position: center;
     background-size: cover;
     background-image: url(../images/MORCAL.jpg);
 }
@@ -146,7 +150,8 @@ header nav img{
     height: 350px;
     border-top: 3px solid var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
-    background-size: cover;
+    background-position: right;
+    background-size:cover;
     background-image: url(../images/runbuddy.jpg);
 }
 #runbuddy:hover {
@@ -159,9 +164,136 @@ header nav img{
     height: 350px;
     border-top: 3px solid var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
-    background-size: cover;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-image: url(../images/breakout.jpg);
 }
 #breakout:hover {
     font-weight: bold;
+}
+/*BEGIN FOOTER SECTION*/
+footer {
+    list-style: none;
+    font-size: 30px;
+    border: 0.2vw solid var(--primary-color);
+    text-align: center;
+    margin-left:13vw;
+}
+
+
+
+ /* ----------Media Queries SMALL DESKTOP screens 980px breakpoint---------- */
+ @media screen and (max-width: 980px)
+ {
+     header, #about, #work, #contact {
+         margin-left: 0px;
+         padding-top: 15vh;
+     }
+     #title{
+         margin-top: 10vh;
+     }
+    header nav {
+        display:inline-flex;
+        flex-direction: row;
+        
+        width: 100vw;
+        height: 15vh;
+    }
+
+    header nav a{
+        height: 5vh;
+        width: 21vw;
+        font-size: 3vh;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    #contact {
+        padding-top: 0px;
+    }
+
+
+ }
+
+ /* -----Media Queries TABLET screens----- */
+
+@media screen and (max-width: 768px) {
+    #profile-pic{
+        order:5;
+        visibility: hidden;
+    }
+
+    #profile-pic-title{
+        visibility: visible;
+        border-radius: 50%;
+        height:20vh;
+    }
+
+    header nav{
+        display:flex;
+        flex-wrap: wrap;
+        height: 45px
+    }
+    
+    #title{
+        margin-top: 1vh;
+
+    }
+
+    header nav a{
+        flex:1 25%;
+        margin-top: 0px;
+        text-align: center;
+        margin-top:5px;
+        width: 150px;
+        height: 30px;
+        font-size: 3vh;
+ 
+    }
+
+}
+
+/* -----Media Queries PHONE screens----- */
+@media screen and (max-width: 575px){
+    
+    header nav{
+        display:flex;
+        flex-wrap: wrap;
+        height:73px;
+        
+    }
+
+
+    #title h1{
+        font-size: 35px;
+    }
+
+    #title h2{
+        font-size: 20px;
+    }
+
+    #profile-pic{
+        order:5;
+        visibility: hidden;
+    }
+
+    #profile-pic-title{
+        visibility: visible;
+        border-radius: 50%;
+        height:20vh;
+    }
+    header nav a{
+        flex:1 50%;
+ 
+ 
+    }
+    #morcal{
+        height: 200px;
+    }
+    #runbuddy, #breakout{
+
+        height: 150px;
+    }
 }
