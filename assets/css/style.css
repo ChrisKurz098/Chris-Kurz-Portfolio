@@ -87,6 +87,7 @@ header nav img{
 
 /*BEGIN ABOUT ME SECTION*/
 #about{
+    overflow: auto;
     height: 300px;
     border: 0.2vw solid var(--primary-color);
     text-align: center;
