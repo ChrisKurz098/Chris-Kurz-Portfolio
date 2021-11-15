@@ -242,12 +242,14 @@ footer h2{
  /* -----Media Queries TABLET screens----- */
 
 @media screen and (max-width: 768px) {
-
+    header nav{
+        height:60px;
+    }
     header nav a{
         text-align: center;
         width: 150px;
-        height: 30px;
-        font-size: 3vh;
+        height: 50px;
+        font-size: 30px;
  
     }
 
@@ -257,10 +259,16 @@ footer h2{
 @media screen and (max-width: 575px){
     
     header nav{
-        height:73px;
+        height:83px;
+    }
+    header nav a{
+
+       height: 35px;
+       font-size: 24px;
+ 
     }
     #about, #work, #contact {
-        scroll-margin-top: 73px;
+        scroll-margin-top: 83px;
     }
     #title{
         margin-top: 13vh;
