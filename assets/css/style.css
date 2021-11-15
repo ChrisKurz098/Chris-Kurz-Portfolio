@@ -14,11 +14,11 @@ html{
 }
 
 body {
-
+    
     font-family: 'Lucida Sans', Arial, sans-serif;
 }
 
-#profile-pic-title{ /*this element is to only be seen on the smallest screen size*/
+#profile-pic-title{ /*this element is to only be seen on smaller screen sizes*/
     visibility: hidden;
     height:0px;
 }
@@ -99,18 +99,20 @@ header nav img{
 
 /*BEGIN ABOUT ME SECTION*/
 #about{
-    height: 300px;
+    background-color:snow;
+    padding-bottom: 20px;
     border: 0.2vw solid var(--primary-color);
     text-align: center;
     margin-left:13vw;
 }
 #about h2{
+    color:var(--primary-color);
     font-size: 40px; /*this should be 30 but for somew reason it doesnt stay the right size*/
 }
 
 /*BEGIN WORKS SECTION*/
 #work {
-
+    color:var(--primary-color);
     background-color:snow;
     font-size: 30px;
     border: 0.2vw solid var(--primary-color);
@@ -174,11 +176,17 @@ header nav img{
 }
 /*BEGIN FOOTER SECTION*/
 footer {
+    color:var(--primary-color);
+    background-color:snow;
     list-style: none;
     font-size: 30px;
     border: 0.2vw solid var(--primary-color);
     text-align: center;
     margin-left:13vw;
+}
+footer h2{
+
+    border-bottom: 8px solid var(--secondary-color);
 }
 
 
@@ -188,30 +196,44 @@ footer {
  {
      header, #about, #work, #contact {
          margin-left: 0px;
-         padding-top: 15vh;
      }
+
+     #about, #work, #contact {
+        scroll-margin-top: 45px;
+    }
+
      #title{
-         margin-top: 10vh;
+        margin-top: 10vh;
      }
+
+     #profile-pic{
+        order:5;
+        visibility: hidden;
+    }
+
+    #profile-pic-title{
+        padding-top: 1px;
+        visibility: visible;
+        border-radius: 50%;
+        height:20vh;
+    }
+    
     header nav {
-        display:inline-flex;
+        display:flex;
+        flex-wrap: wrap;
         flex-direction: row;
-        
         width: 100vw;
-        height: 15vh;
+        height: 45px;
     }
 
     header nav a{
+        flex:1 25%;
         height: 5vh;
         width: 21vw;
+        margin-top:5px;
         font-size: 3vh;
         margin-left: auto;
         margin-bottom: auto;
-        margin-top: auto;
-    }
-
-    #contact {
-        padding-top: 0px;
     }
 
 
@@ -220,33 +242,9 @@ footer {
  /* -----Media Queries TABLET screens----- */
 
 @media screen and (max-width: 768px) {
-    #profile-pic{
-        order:5;
-        visibility: hidden;
-    }
-
-    #profile-pic-title{
-        visibility: visible;
-        border-radius: 50%;
-        height:20vh;
-    }
-
-    header nav{
-        display:flex;
-        flex-wrap: wrap;
-        height: 45px
-    }
-    
-    #title{
-        margin-top: 1vh;
-
-    }
 
     header nav a{
-        flex:1 25%;
-        margin-top: 0px;
         text-align: center;
-        margin-top:5px;
         width: 150px;
         height: 30px;
         font-size: 3vh;
@@ -259,12 +257,14 @@ footer {
 @media screen and (max-width: 575px){
     
     header nav{
-        display:flex;
-        flex-wrap: wrap;
         height:73px;
-        
     }
-
+    #about, #work, #contact {
+        scroll-margin-top: 73px;
+    }
+    #title{
+        margin-top: 13vh;
+     }
 
     #title h1{
         font-size: 35px;
@@ -274,16 +274,6 @@ footer {
         font-size: 20px;
     }
 
-    #profile-pic{
-        order:5;
-        visibility: hidden;
-    }
-
-    #profile-pic-title{
-        visibility: visible;
-        border-radius: 50%;
-        height:20vh;
-    }
     header nav a{
         flex:1 50%;
  
