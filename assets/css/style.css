@@ -236,6 +236,14 @@ footer h2{
         margin-bottom: auto;
     }
 
+    footer h2{
+    margin-bottom: 10px;
+    }
+    footer ul{
+        font-size: 20px;
+        
+    }
+
 
  }
 
