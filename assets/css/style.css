@@ -119,6 +119,7 @@ header nav img{
     text-align: center;
     margin-left:13vw;
 }
+
 /*children*/
 
 #works{
@@ -138,7 +139,7 @@ header nav img{
     height: 350px;
     border-top: 3px solid var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-image: url(../images/MORCAL.jpg);
 }
@@ -199,7 +200,12 @@ footer h2{
      }
 
      #about, #work, #contact {
+         
         scroll-margin-top: 45px;
+    }
+    #about h2, #work h2, #contact h2 {
+         
+        font-size: 28px;
     }
 
      #title{
@@ -236,6 +242,9 @@ footer h2{
         margin-bottom: auto;
     }
 
+    #works a{
+        font-size: 20px;
+    }
     footer h2{
     margin-bottom: 10px;
     }
