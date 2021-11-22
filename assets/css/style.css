@@ -21,6 +21,7 @@ body {
 #profile-pic-title{ /*this element is to only be seen on smaller screen sizes*/
     visibility: hidden;
     height:0px;
+    animation: fadeIn 1s
 }
 header {
     overflow: hidden;
@@ -33,6 +34,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     border-bottom: 0.2vw solid var(--primary-color);
+    
 
 }
 #title {
@@ -40,6 +42,7 @@ header {
     flex: 0 100%;
     display: block;
     text-align: center;
+    animation: inFromTop 3s;
 }
 #title h1{
     color:var(--secondary-color);
@@ -71,6 +74,7 @@ header nav {
     background-attachment: fixed;
     
     z-index: 9999;
+  
 }
 
 header nav a{
@@ -82,6 +86,7 @@ header nav a{
     border-radius: 20px;
     border-top: .5vh solid var(--primary-color);
     border-bottom: .5vh solid var(--primary-color); 
+    animation: inFromLeft 1s;
 }
 
 header nav a:hover{
@@ -93,6 +98,7 @@ header nav img{
     border-radius: 45%;
     max-height: 13vw ;
     max-width: 13vw;
+    animation: inFromLeft 1s;
 }
 
 /* END HEADER/NAV */
@@ -310,5 +316,37 @@ footer h2{
     #runbuddy, #breakout{
 
         height: 150px;
+    }
+}
+
+/*ANIMATION SECTION*/
+@keyframes fadeIn {
+    from{
+        
+        filter:blur(10px)
+    }
+}
+@keyframes flyIn {
+    from{
+        
+        transform: scale(5) translate(75vw,75vh);
+        opacity:0;
+        filter:blur(10px)
+    }
+}
+
+@keyframes inFromTop {
+    from{
+        opacity:0;
+        transform: translate(0px,-200px);
+        
+    }
+}
+
+@keyframes inFromLeft {
+    from{
+        opacity:0;
+        transform: translate(-200px,0px);
+        
     }
 }
