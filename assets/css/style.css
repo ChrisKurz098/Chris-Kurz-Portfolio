@@ -138,10 +138,21 @@ header nav img{
     text-decoration: none;
     text-align: left;
 }
+/*Spelling Bee*/
+#spellingBee {
+    color: var(--primary-color);
+    flex: 1 50%;
+    height: 350px;
+    border-top: 3px solid var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    background-position: top;
+    background-size: cover;
+    background-image: url(../images/spellingImage.jpg);
+}
                                     /*MORCAL---------*/
 #morcal {
     color: var(--primary-color);
-    flex: 1 100%;
+    flex: 1 50%;
     height: 350px;
     border-top: 3px solid var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
