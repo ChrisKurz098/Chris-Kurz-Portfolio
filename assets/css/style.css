@@ -138,8 +138,24 @@ header nav img{
     text-decoration: none;
     text-align: left;
 }
+
+
+
+
 /*Spelling Bee*/
 #spellingBee {
+    color: var(--primary-color);
+    flex: 1 100%;
+    height: 350px;
+    border-top: 3px solid var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    background-position: top;
+    background-size: cover;
+    background-image: url(../images/spellingImage.jpg);
+}
+
+/*CRT*/
+#crtFlashBack {
     color: var(--primary-color);
     flex: 1 50%;
     height: 350px;
@@ -147,7 +163,7 @@ header nav img{
     border-bottom: 3px solid var(--primary-color);
     background-position: top;
     background-size: cover;
-    background-image: url(../images/spellingImage.jpg);
+    background-image: url(../images/CRTImage.jpg);
 }
                                     /*MORCAL---------*/
 #morcal {
