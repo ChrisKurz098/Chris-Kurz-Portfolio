@@ -145,6 +145,8 @@ header nav img{
 /*Spelling Bee*/
 #spellingBee {
     color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-position: 35% 0%;
     flex: 1 100%;
     height: 350px;
     border-top: 3px solid var(--primary-color);
@@ -155,8 +157,10 @@ header nav img{
 }
 
 /*CRT*/
-#crtFlashBack {
+#crtFlashBack, #weatherDash, #jsQuiz, #morcal, #runbuddy, #breakout  {
     color: var(--primary-color);
+    background-repeat: no-repeat;
+    
     flex: 1 50%;
     height: 350px;
     border-top: 3px solid var(--primary-color);
@@ -165,47 +169,36 @@ header nav img{
     background-size: cover;
     background-image: url(../images/CRTImage.jpg);
 }
+
+
+                                    /*MORCAL---------*/
+#weatherDash {
+
+    background-image: url(../images/weatherDash.png);
+}
+                                    /*MORCAL---------*/
+#jsQuiz {
+
+    background-image: url(../images/jsQuiz.png);
+}
                                     /*MORCAL---------*/
 #morcal {
-    color: var(--primary-color);
-    flex: 1 50%;
-    height: 350px;
-    border-top: 3px solid var(--primary-color);
-    border-bottom: 3px solid var(--primary-color);
-    background-position: top;
-    background-size: cover;
+
     background-image: url(../images/MORCAL.jpg);
 }
-#morcal:hover {
-    font-weight: bold;
-}
+
                                     /*runbuddy---------*/
 #runbuddy {
-    color: var(--primary-color);
-    flex:1 50%;
-    height: 350px;
-    border-top: 3px solid var(--primary-color);
-    border-bottom: 3px solid var(--primary-color);
-    background-position: right;
-    background-size:cover;
+
     background-image: url(../images/runbuddy.jpg);
 }
-#runbuddy:hover {
-    font-weight: bold;
-}
+
                                     /*breakout---------*/
 #breakout {
-    color: var(--primary-color);
-    flex: 1 50%;
-    height: 350px;
-    border-top: 3px solid var(--primary-color);
-    border-bottom: 3px solid var(--primary-color);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
+
     background-image: url(../images/breakout.jpg);
 }
-#breakout:hover {
+#crtFlashBack:hover,#spellingBee:hover, #weatherDash:hover, #jsQuiz:hover, #morcal:hover, #runbuddy:hover, #breakout:hover{
     font-weight: bold;
 }
 /*BEGIN FOOTER SECTION*/
