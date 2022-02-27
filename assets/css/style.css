@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+p {
+    padding: 0 100px 0 100px;
+    font-size: 30px;
+}
 html{
     scroll-behavior: smooth; /*makes all scrolling smooth*/
 }
@@ -140,10 +144,7 @@ header nav img{
 }
 
 
-
-
-/*Spelling Bee*/
-#spellingBee {
+#plantzzz {
     color: var(--primary-color);
     background-repeat: no-repeat;
     background-position: 35% 0%;
@@ -156,8 +157,10 @@ header nav img{
     background-image: url(../images/spellingImage.jpg);
 }
 
-/*CRT*/
-#crtFlashBack, #weatherDash, #jsQuiz, #morcal, #runbuddy, #breakout  {
+
+
+
+#spellingBee, #crtFlashBack, #weatherDash, #jsQuiz  {
     color: var(--primary-color);
     background-repeat: no-repeat;
     
@@ -170,35 +173,26 @@ header nav img{
     background-image: url(../images/CRTImage.jpg);
 }
 
-
-                                    /*MORCAL---------*/
+#plantzzz {
+    background-image: url(../images/plantzzz.png);
+}
+   /*Spelling Bee*/
+#spellingBee {
+    background-image: url(../images/spellingImage.jpg);
+}                              
 #weatherDash {
 
     background-image: url(../images/weatherDash.png);
 }
-                                    /*MORCAL---------*/
+                                
 #jsQuiz {
 
     background-image: url(../images/jsQuiz.png);
 }
-                                    /*MORCAL---------*/
-#morcal {
+                               
 
-    background-image: url(../images/MORCAL.jpg);
-}
 
-                                    /*runbuddy---------*/
-#runbuddy {
-
-    background-image: url(../images/runbuddy.jpg);
-}
-
-                                    /*breakout---------*/
-#breakout {
-
-    background-image: url(../images/breakout.jpg);
-}
-#crtFlashBack:hover,#spellingBee:hover, #weatherDash:hover, #jsQuiz:hover, #morcal:hover, #runbuddy:hover, #breakout:hover{
+#plantzzz:hover,#crtFlashBack:hover,#spellingBee:hover, #weatherDash:hover, #jsQuiz:hover, #morcal:hover, #runbuddy:hover, #breakout:hover{
     font-weight: bold;
 }
 /*BEGIN FOOTER SECTION*/
@@ -215,6 +209,7 @@ footer h2{
 
     border-bottom: 8px solid var(--secondary-color);
 }
+
 
 
 
